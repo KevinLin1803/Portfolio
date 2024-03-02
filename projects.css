@@ -1,0 +1,40 @@
+.project-img-container{
+    position: relative;
+    width: 1210px;
+    height: 600px;
+}
+
+.layer{
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.layer:hover{
+    opacity: 1;
+}
+
+.project-description{
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    left: 45%;
+    right: 40%;
+    bottom: 20%;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.project-img-container:hover .project-description{
+    opacity: 1;
+}
+
+.project-links{
+    margin-bottom: 100px;
+}
+

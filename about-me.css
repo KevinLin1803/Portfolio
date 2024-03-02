@@ -1,0 +1,28 @@
+/* #about-me{
+    position: relative;
+} */
+
+.about-me-subtitle{
+    /* height: 0px; */
+    /* position: absolute;
+    top: 0%; */
+    color: black;
+    font-size: 50px;
+    margin: 20px 0px;
+    /* animation: slider 10s; */
+}
+
+.about-me-overview{
+    padding-left: 100px;
+    height: 10px;
+}
+
+/* @keyframes slider {
+    from {
+        margin-left: -100%;
+    }
+
+    to {
+        margin-left: 0%;
+    }
+} */

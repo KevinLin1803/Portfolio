@@ -1,0 +1,229 @@
+#Introduction{
+    padding: 300px 0;
+    font-size: 50px;    
+    font-weight: 500;
+    margin-bottom: 100px;
+}
+
+.name{
+    position: relative;
+    width: max-content;
+    letter-spacing: .13em;
+}
+
+.role{
+    margin-top: 30px;
+    color: rgb(16, 124, 239);
+    position: relative;
+    opacity: 0; 
+    transform: translateY(3rem);
+    animation: fadeInUp 2s ease 3.5s forwards;
+}
+
+.role::before,
+.role::after,
+.name::before,
+.name::after {
+    content:'';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.name::before{
+    background: white;
+    animation: typewriter 2s steps(17) forwards 1s;
+}
+
+.name::after{
+    width: 0.125em;
+    background-color: black;
+    animation: typewriter 2s steps(17) forwards 1s,
+    blink 750ms steps(18) infinite;
+}
+
+
+@keyframes typewriter{
+    to { 
+        left: 100%;
+    }
+}
+
+@keyframes blink{
+    to {
+        background-color: transparent;
+    }
+}
+
+ @keyframes fadeInUp{
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+} 
+
+.page-subtitle{
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+#about-me,
+#projects,
+#skills,
+#contact {
+    padding-top: 100px;
+    margin-bottom: 150px;
+}
+
+.page-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.thumbnail{
+
+    width: 1210px;
+    height: 600px;
+    object-fit: contain;
+    border: 1px solid black;
+}
+
+.project-subtitle{
+    color: rgb(128, 128, 128);
+    font-size: 20px;
+    font-weight: 500;
+    margin: 20px 0px;
+}
+
+.project-tags{
+    background-color: black;
+    color: white;
+    display: inline-block;
+    padding: 10px 5px;
+    border-radius: 2px;
+}
+
+.project-links{
+    display: flex;
+    align-items: center;
+}
+
+.project-link-text{
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+}
+
+.project-link-text:hover{
+    color:rgb(16, 124, 239);
+}
+
+.project-display{
+    width: 35px;
+    margin-right: 25px;
+    margin-left: 5px;
+}
+
+.about-me-overview{
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.skills-details{
+    margin-left: 100px;
+    margin-right: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills-details div{
+    font-size: 20px;
+}
+
+.skill-title{
+    color: rgb(16, 124, 239);
+    margin-bottom:  10px;
+}
+
+.skill{
+    margin-bottom: 5px;
+}
+
+.contact-details{
+    display: flex;
+    align-items: top;
+}
+
+.socials-1{
+    height: 50px;
+}
+
+.socials-2{
+    width: 50px;
+}
+
+.contact-text{
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.resume-container{
+    margin: 200px 0px;
+}
+
+.resume{
+    background-color: red;
+    color: white;
+    padding: 10px 10px;
+    border-radius: 2px;
+    
+}
+
+.resume:hover{
+    color: white;
+    opacity: 0.5;
+}
+
+.contact-form{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    margin-left: 150px;
+    width: 500px;
+    height: 466px;
+    padding: 50px;
+}
+
+.input{
+    padding: 12px 10px;
+    margin-bottom: 15px;
+}
+
+.input::placeholder{
+    font-family: Fira Code, monospace;
+}
+
+.Message{
+    padding: 12px 10px;
+    height: 260px;
+    margin-bottom: 15px;
+}
+
+.Message::placeholder{
+    text-align: top;
+}
+
+.send{
+    background-color: black;
+    height: 30px;
+    color: white;
+}
+
+.send:hover{
+    color: red;
+}
