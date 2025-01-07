@@ -1,3 +1,9 @@
+/* Adding padding to the body and margin affects the entire viewport size (fks up the sizing of everything else)
+Can either adjust for that by::after
+1.  reducing percentage values
+2. Using box-sizing: border-box;
+*/
+
 body {
     padding: 0px 200px;
     margin: 0px 27px;
@@ -6,8 +12,8 @@ body {
     font-family:Fira Code, monospace;
     /* padding-bottom: 100px; */
     /* /* overflow-x: hidden;  */
-    /* border: 2px dashed blue;  */
-      
+    border: 2px dashed blue; 
+    overflow-x: clip;
 }
 
 html {

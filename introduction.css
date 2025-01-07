@@ -9,6 +9,7 @@
     position: relative;
     width: max-content;
     letter-spacing: .13em;
+    max-width: 85vw;
 }
 
 .role{
