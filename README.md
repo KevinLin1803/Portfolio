@@ -1,7 +1,7 @@
-#Portfolio
+# Portfolio
 
-##Portfolio Description
+## Portfolio Description
 
-##Descriptions
+## Descriptions
 - Scroll behavior + spacing between elements (primarily web design elements)
 - 
