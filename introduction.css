@@ -102,23 +102,7 @@
     /* min-height: 600px; */
     width: 100%;
     object-fit: contain;
-}
-
-.project-subtitle{
-    color: rgb(128, 128, 128);
-    font-size: 20px;
-    font-weight: 500;
-    margin: 20px 0px;
-    max-width: 830px;
-    text-align: justify;
-}
-
-.project-tags{
-    background-color: black;
-    color: white;
-    display: inline-block;
-    padding: 10px 5px;
-    border-radius: 2px;
+    display: block;
 }
 
 .project-links{

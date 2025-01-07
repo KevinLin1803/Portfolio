@@ -7,13 +7,7 @@ Can either adjust for that by::after
 body {
     padding: 0px 200px;
     margin: 0px 27px;
-    /* max-width: 900px;
-    margin-inline: auto; */
     font-family:Fira Code, monospace;
-    /* padding-bottom: 100px; */
-    /* /* overflow-x: hidden;  */
-    border: 2px dashed blue; 
-    overflow-x: clip;
 }
 
 html {
