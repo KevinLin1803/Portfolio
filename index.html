@@ -1,9 +1,5 @@
 <!DOCTYPE html>
 
-<!-- add animation and add functionalities -->
-
-<!-- note down customisation ideas while ur at it -->
-
 <html>
     <header>
         <title>Kevin Lin</title>
@@ -66,28 +62,28 @@
                 </div>
             </div>
 
-            <div id = "about-me">
+            <div id = "about-me" class = "hidden">
                 <div class = "about-me-subtitle">
                     About Me
                 </div>
                 <div class = "about-me-details">
                     <div>
                         <div class = "about-me-overview">
-                            I am a full stack developer currently studying computer science and commerce at UNSW. I am passionate about building applications
-                            that better the daily lives of the people around me. I also enjoy playing tennis &#127934;.
+                            I am a full stack developer currently studying computer science and commerce at UNSW. I enjoy coding web-apps and have 
+                            an interest in AI. I also enjoy playing tennis &#127934;.
                         </div>
                     </div>
                 </div>
             </div>
             
-            <div id = "projects">
-                <div class = "page-subtitle">
+            <div id = "projects" >
+                <div class = "page-subtitle hidden">
                     Projects
                 </div>
                 <div class = "page-details">
-                    <div class = "project-1">
+                    <div class = "project-1 hidden">
                         <div class = "project-img-container">
-                            <img class = "thumbnail" src = "Thumbnails/coming-soon-business-sign-free-vector.jpg">
+                            <img class = "thumbnail" src = "Thumbnails/hawkeye snapshot.png">
                             <div class = "layer">
                             </div>
                             <div class = "project-description"> Coming soon!</div>
@@ -100,19 +96,20 @@
                         </div>
 
                         <div class = "project-subtitle">
-                            It's coming soon!
+                            This project simulates the tennis hawkeye system, analysing player speeds and shots. Players and tennis balls are detected using the 
+                            YOLOv8 and YOLOv5 models respectively. Keypoints on the court are extracted using CNNs.
                         </div>
 
                         <div class = "project-links">
-                            <a class = "project-link-text" href = "https://www.google.com/" target = "_blank">
+                            <!-- <a class = "project-link-text" href = "https://www.google.com/" target = "_blank">
                                     Visit the site
                             </a>
 
                             <a href = "https://www.google.com/" target = "_blank">
                                 <img class = "project-display" src = "symbols/web.png">
-                            </a>
+                            </a> -->
 
-                            <a class = "project-link-text" href = "https://www.youtube.com/" target = "_blank">
+                            <a class = "project-link-text" href = "https://github.com/KevinLin1803/Tennis-HawkEye" target = "_blank">
                                     See the code
                             </a>
 
@@ -123,9 +120,9 @@
                         </div>
                     </div>
 
-                    <div class = "project-2">
+                    <div class = "project-2 hidden">
                         <div class = "project-img-container">
-                            <img class = "thumbnail" src = "Thumbnails/coming-soon-business-sign-free-vector.jpg">
+                            <img class = "thumbnail" src = "Thumbnails/oceans_apart.png">
                             <div class = "layer">
                             </div>
                             <div class = "project-description"> Coming soon!</div>
@@ -137,19 +134,13 @@
                             <div>Express</div>
                         </div>
                         <div class = "project-subtitle">
-                            It's coming soon!
+                            This project features a long-term couples web-app that helps one another track daily tasks, build daily tasks
+                            and book online dates. I created it whilst I was on exchange and used it with my girlfriend to stay in touch 
+                            and productive together.
                         </div>
 
                         <div class = "project-links">
-                                                        <a class = "project-link-text" href = "https://www.google.com/" target = "_blank">
-                                    Visit the site
-                            </a>
-
-                            <a href = "https://www.google.com/" target = "_blank">
-                                <img class = "project-display" src = "symbols/web.png">
-                            </a>
-
-                            <a class = "project-link-text" href = "https://www.youtube.com/" target = "_blank">
+                            <a class = "project-link-text" href = "https://github.com/KevinLin1803/Oceans_Apart" target = "_blank">
                                     See the code
                             </a>
 
@@ -161,7 +152,7 @@
                 </div>
             </div>
 
-            <div id = "skills">
+            <div id = "skills" class = "hidden">
                 <div class = "page-subtitle">
                     Skills
                 </div>
@@ -227,7 +218,7 @@
             </div>
             
 
-            <div id = "contact">
+            <div id = "contact" class = "hidden">
                 <div class = "page-subtitle">
                     Contact
                 </div>
@@ -265,4 +256,26 @@
         </main>
 
     </body>
+
+    <script >
+        const hiddenElements = document.querySelectorAll('.hidden');
+
+        const observer = new IntersectionObserver((entries)=> {
+            for (const entry of entries) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show')
+                }
+            }
+        }, {
+            root: null,
+            rootMargin: '0px 0px -40% 0px', // Ig it's not so easy to code something "Modern"
+            threshold: 0 
+        });
+
+        for (const element of hiddenElements) {
+            observer.observe(element);
+        }
+
+    </script>
+
 </html>

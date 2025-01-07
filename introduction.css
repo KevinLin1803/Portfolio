@@ -69,28 +69,38 @@
     margin-bottom: 50px;
 }
 
-#about-me,
 #projects,
 #skills,
 #contact {
-    padding-top: 100px;
+    /* height: 100vh; */
+    padding-top: 130px;
     margin-bottom: 150px;
 }
+
+#about-me {
+    height: 40vh;
+    padding-top:90px;
+    /* padding-top: 100px;
+    margin-bottom: 300px; */
+}
+
+/* #projects {
+    he
+} */
+
 
 .page-details{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: 50px;
 }
 
 .thumbnail{
-
-    width: 1210px;
-    height: 600px;
+    /* width: 1210px; */
+    /* min-height: 600px; */
+    width: 100%;
     object-fit: contain;
-    border: 1px solid black;
 }
 
 .project-subtitle{
@@ -98,6 +108,8 @@
     font-size: 20px;
     font-weight: 500;
     margin: 20px 0px;
+    max-width: 830px;
+    text-align: justify;
 }
 
 .project-tags{

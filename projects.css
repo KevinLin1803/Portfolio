@@ -1,7 +1,7 @@
 .project-img-container{
     position: relative;
-    width: 1210px;
-    height: 600px;
+    max-width: 830px;
+    /* min-height: 300px; */
 }
 
 .layer{
@@ -37,4 +37,3 @@
 .project-links{
     margin-bottom: 100px;
 }
-

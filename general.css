@@ -1,12 +1,26 @@
 body {
     padding: 0px 200px;
     margin: 0px 27px;
+    /* max-width: 900px;
+    margin-inline: auto; */
     font-family:Fira Code, monospace;
-    padding-bottom: 100px;
+    /* padding-bottom: 100px; */
+    /* /* overflow-x: hidden;  */
+    /* border: 2px dashed blue;  */
+      
 }
 
 html {
     scroll-behavior: smooth;
 }
 
-/* shud defs find ur own font */
+.hidden {
+    opacity:0;
+    transform: translateY(3rem);
+    transition: 1.5s;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
