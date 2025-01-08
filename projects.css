@@ -45,11 +45,12 @@
 }
 
 .project-description{
-    font-size: 20px;
-    color: white;
+    border-radius: 8px;
+    padding: 20px 10px;
+    font-size: 18px;
     position: absolute;
     left: 40%;
-    bottom: 45%;
+    bottom: 40%;
     opacity: 0;
     transition: opacity 0.5s;
 }
