@@ -15,6 +15,7 @@
 .about-me-overview{
     padding-left: 100px;
     height: 10px;
+    text-align: justify;
 }
 
 /* @keyframes slider {
