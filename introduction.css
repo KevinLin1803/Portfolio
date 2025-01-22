@@ -129,6 +129,7 @@
 .about-me-overview{
     font-size: 20px;
     margin-bottom: 30px;
+    max-height: 300px;
 }
 
 .skills-details{
@@ -157,11 +158,11 @@
 }
 
 .socials-1{
-    height: 50px;
+    height: 35px;
 }
 
 .socials-2{
-    width: 50px;
+    width: 35px;
 }
 
 .contact-text{

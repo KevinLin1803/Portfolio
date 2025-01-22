@@ -17,6 +17,13 @@ a{
     width: 80vw;
 }
 
+.right-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
 button {
     font-family: Fira Code, monospace;
     font-size: 16px;
