@@ -5,13 +5,6 @@
     margin-bottom: 100px;
 }
 
-.name{
-    position: relative;
-    width: max-content;
-    letter-spacing: .13em;
-    max-width: 85vw;
-}
-
 .role{
     margin-top: 30px;
     color: rgb(16, 124, 239);
@@ -21,8 +14,16 @@
     animation: fadeInUp 2s ease 3.5s forwards;
 }
 
-.role::before,
-.role::after,
+.name{
+    position: relative;
+    max-width: 90vw;
+    width: fit-content;
+    letter-spacing: .13em;
+}
+
+/* .role::before,
+.role::after, */
+/* This is the deleting thingo */
 .name::before,
 .name::after {
     content:'';
@@ -33,16 +34,18 @@
     left: 0;
 }
 
+/* This is what keeps it concealed */
 .name::before{
     background: white;
-    animation: typewriter 2s steps(17) forwards 1s;
+    animation: typewriter 10s steps(17) forwards 1s;
 }
 
+/* This is the typewriting blinker   */
 .name::after{
     width: 0.125em;
     background-color: black;
-    animation: typewriter 2s steps(17) forwards 1s,
-    blink 750ms steps(18) infinite;
+    animation: typewriter 10s steps(17) forwards 1s,
+    blink 750ms steps(20) infinite;
 }
 
 
@@ -133,8 +136,8 @@
 }
 
 .skills-details{
-    margin-left: 100px;
-    margin-right: 100px;
+    /* margin-left: 100px;
+    margin-right: 100px; */
     display: flex;
     justify-content: space-between;
 }
