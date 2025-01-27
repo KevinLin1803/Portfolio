@@ -12,10 +12,15 @@
     /* animation: slider 10s; */
 }
 
+.about-me-details {
+    display: flex;
+    justify-content: center;
+}
+
 .about-me-overview{
-    padding-left: 100px;
     height: 10px;
     text-align: justify;
+    max-width: 1200px;
 }
 
 /* @keyframes slider {

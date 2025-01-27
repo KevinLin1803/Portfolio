@@ -61,190 +61,194 @@
                 </div>
             </header>
 
-            <div id = "Introduction">
-                <h1 class = "name">Hello, I'm Kevin.</h1>
+            <div class = "content-wrapper">
+                <div id = "Introduction">
+                    <h1 class = "name">Hello, I'm Kevin.</h1>
 
-                <div class = "role">
-                    Welcome to my portfolio!
+                    <div class = "role">
+                        Welcome to my portfolio &#128075;
+                    </div>
                 </div>
-            </div>
 
-            <div id = "about-me" class = "hidden">
-                <div class = "about-me-subtitle">
-                    About Me
-                </div>
-                <div class = "about-me-details">
-                    <div>
-                        <div class = "about-me-overview">
-                            I am a final year computer science and commerce student at UNSW. I code full-stack web-apps and have 
-                            an interest in AI. I also enjoy playing tennis &#127934;.
+                <div id = "about-me" class = "hidden">
+                    <div class = "about-me-subtitle">
+                        About Me
+                    </div>
+                    <div class = "about-me-details">
+                        <div>
+                            <div class = "about-me-overview">
+                                I am a final year computer science and commerce student at UNSW. I code full-stack web-apps and have 
+                                an interest in AI. I also enjoy playing tennis &#127934;.
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            
-            <div id = "projects" >
-                <div class = "page-subtitle hidden">
-                    Projects
-                </div>
-                <div class = "page-details">
-                    <div class = "project-1 hidden">
-                        <h2 class = "project-title">
-                            Tennis Hawkeye
-                        </h2>
+                
+                <div id = "projects" >
+                    <div class = "page-subtitle hidden">
+                        Projects
+                    </div>
+                    <div class = "page-details">
+                        <div class = "project-1 hidden">
+                            <h2 class = "project-title">
+                                Tennis Hawkeye
+                            </h2>
 
-                        <div class = "project-img-container">
-                            <img class = "thumbnail" src = "Thumbnails/hawkeye snapshot.png">
-                            <div class = "layer">
+                            <div class = "project-img-container">
+                                <img class = "thumbnail" src = "Thumbnails/hawkeye snapshot.png">
+                                <div class = "layer">
+                                    <a href = "https://github.com/KevinLin1803/Tennis-HawkEye" target = "_blank">
+                                        <button class = "project-description"> 
+                                            &lt; Visit The Code &gt;
+                                        </button>
+                                    </a>    
+                                </div>
+                            </div>
+                            <div class = "project-subtitle">
+                                Tech stack
+                            </div>
+                            <div class = "project-tags">
+                                <div class = "tech-tag">Python3</div>
+                                <div class = "tech-tag" >Pytorch</div>
+                                <div class = "tech-tag">Yolo</div>
+                            </div>
+
+                            <div class = "project-summary">
+                                This project simulates the tennis hawkeye system, analysing player speeds and shots. Players and tennis balls are detected using the 
+                                YOLOv8 and YOLOv5 models respectively. Keypoints on the court are extracted using CNNs.
+                            </div>
+
+                            <div class = "project-links">
+                                <!-- <a class = "project-link-text" href = "https://www.google.com/" target = "_blank">
+                                        Visit the site
+                                </a>
+
+                                <a href = "https://www.google.com/" target = "_blank">
+                                    <img class = "project-display" src = "symbols/web.png">
+                                </a> -->
+
+                                <a class = "project-link-text" href = "https://github.com/KevinLin1803/Tennis-HawkEye" target = "_blank">
+                                        See the code
+                                </a>
+
                                 <a href = "https://github.com/KevinLin1803/Tennis-HawkEye" target = "_blank">
-                                    <button class = "project-description"> 
-                                        &lt; Visit The Code &gt;
-                                    </button>
-                                </a>    
+                                    <img class = "project-display"  src = "Symbols/GitHub-Mark.png">
+                                </a>
+
                             </div>
                         </div>
-                        <div class = "project-subtitle">
-                            Tech stack
-                        </div>
-                        <div class = "project-tags">
-                            <div class = "tech-tag">Python3</div>
-                            <div class = "tech-tag" >Pytorch</div>
-                            <div class = "tech-tag">Yolo</div>
-                        </div>
 
-                        <div class = "project-summary">
-                            This project simulates the tennis hawkeye system, analysing player speeds and shots. Players and tennis balls are detected using the 
-                            YOLOv8 and YOLOv5 models respectively. Keypoints on the court are extracted using CNNs.
-                        </div>
+                        <div class = "project-2 hidden">
+                            <h2 class = "project-title">
+                                Oceans Apart
+                            </h2>
 
-                        <div class = "project-links">
-                            <!-- <a class = "project-link-text" href = "https://www.google.com/" target = "_blank">
-                                    Visit the site
-                            </a>
+                            <div class = "project-img-container">
+                                <img class = "thumbnail" src = "Thumbnails/oceans_apart.png">
+                                <div class = "layer"> 
+                                    <a href = "https://github.com/KevinLin1803/Oceans_Apart" target = "_blank">
+                                        <button class = "project-description"> 
+                                            &lt; Visit The Code &gt;
+                                        </button>
+                                    </a>    
+                                </div>
+                            </div>                        
+                            <div class = "project-subtitle">
+                                Tech stack
+                            </div>
+                            <div class = "project-tags">
+                                <div class = "tech-tag">React</div>
+                                <div class = "tech-tag">Express</div>
+                                <div class = "tech-tag">Node Js</div>
+                                <div class = "tech-tag">PostgreSQL</div>
+                            </div>
+                            <div class = "project-summary">
+                                This project features a long-term couples web-app that helps couples track daily tasks, build shared progress
+                                and book online dates. It allows couples to store date ideas, stay productive and book dates as rewards for 
+                                shared productivity.
+                            </div>
 
-                            <a href = "https://www.google.com/" target = "_blank">
-                                <img class = "project-display" src = "symbols/web.png">
-                            </a> -->
+                            <div class = "project-links">
+                                <a class = "project-link-text" href = "https://github.com/KevinLin1803/Oceans_Apart" target = "_blank">
+                                        See the code
+                                </a>
 
-                            <a class = "project-link-text" href = "https://github.com/KevinLin1803/Tennis-HawkEye" target = "_blank">
-                                    See the code
-                            </a>
-
-                            <a href = "https://github.com/KevinLin1803/Tennis-HawkEye" target = "_blank">
-                                <img class = "project-display"  src = "Symbols/GitHub-Mark.png">
-                            </a>
-
-                        </div>
-                    </div>
-
-                    <div class = "project-2 hidden">
-                        <h2 class = "project-title">
-                            Oceans Apart
-                        </h2>
-
-                        <div class = "project-img-container">
-                            <img class = "thumbnail" src = "Thumbnails/oceans_apart.png">
-                            <div class = "layer"> 
                                 <a href = "https://github.com/KevinLin1803/Oceans_Apart" target = "_blank">
-                                    <button class = "project-description"> 
-                                        &lt; Visit The Code &gt;
-                                    </button>
-                                </a>    
+                                    <img class = "project-display"  src = "Symbols/GitHub-Mark.png">
+                                </a>
                             </div>
-                        </div>                        
-                        <div class = "project-subtitle">
-                            Tech stack
                         </div>
-                        <div class = "project-tags">
-                            <div class = "tech-tag">React</div>
-                            <div class = "tech-tag">Express</div>
-                            <div class = "tech-tag">Node Js</div>
-                            <div class = "tech-tag">PostgreSQL</div>
-                        </div>
-                        <div class = "project-summary">
-                            This project features a long-term couples web-app that helps couples track daily tasks, build shared progress
-                            and book online dates. It allows couples to store date ideas, stay productive and book dates as rewards for 
-                            shared productivity.
+                    </div>
+                </div>
+
+                <div id = "skills" class = "hidden">
+                    <div class = "page-subtitle">
+                        Skills & Certifications
+                    </div>
+                    <div class = "skills-details">
+                        <div class = "skill-section">
+                            <div class = "skill-title">
+                                Back-End Technology
+                            </div>
+
+                            <div class = "skill">
+                                NodeJs
+                            </div>
+
+                            <div class = "skill">
+                                ExpressJS
+                            </div>
+
+                            <div class = "skill">
+                                Python
+                            </div>
+
+                            <div class = "skill">
+                                PostgreSQL
+                            </div>
                         </div>
 
-                        <div class = "project-links">
-                            <a class = "project-link-text" href = "https://github.com/KevinLin1803/Oceans_Apart" target = "_blank">
-                                    See the code
-                            </a>
+                        <div class = "skill-section">
+                            <div class = "skill-title">
+                                Front-end Technology
+                            </div>
 
-                            <a href = "https://github.com/KevinLin1803/Oceans_Apart" target = "_blank">
-                                <img class = "project-display"  src = "Symbols/GitHub-Mark.png">
-                            </a>
+                            <div class = "skill">
+                                HTML
+                            </div>
+
+                            <div class = "skill">
+                                CSS
+                            </div>
+
+                            <div class = "skill">
+                                ReactJS
+                            </div>
+                        </div>
+
+                        <div class = "skill-section">
+                            <div class = "skill-title">
+                                Other
+                            </div>
+                            <div class = "skill">
+                                Typescript
+                            </div>
+                            <div class = "skill">
+                                WordPress
+                            </div>
+                            <div class = "skill">
+                                Java
+                            </div>
+                            <div class = "skill">
+                                R
+                            </div>
+                            <div class = "skill">
+                                PyTorch
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <div id = "skills" class = "hidden">
-                <div class = "page-subtitle">
-                    Skills & Certifications
-                </div>
-                <div class = "skills-details">
-                    <div class = "skill-section">
-                        <div class = "skill-title">
-                            Back-End Technology
-                        </div>
-
-                        <div class = "skill">
-                            NodeJs
-                        </div>
-
-                        <div class = "skill">
-                            ExpressJS
-                        </div>
-
-                        <div class = "skill">
-                            Python
-                        </div>
-
-                        <div class = "skill">
-                            PostgreSQL
-                        </div>
-                    </div>
-
-                    <div class = "skill-section">
-                        <div class = "skill-title">
-                            Front-end Technology
-                        </div>
-
-                        <div class = "skill">
-                            HTML
-                        </div>
-
-                        <div class = "skill">
-                            CSS
-                        </div>
-
-                        <div class = "skill">
-                            ReactJS
-                        </div>
-                    </div>
-
-                    <div class = "skill-section">
-                        <div class = "skill-title">
-                            Other
-                        </div>
-                        <div class = "skill">
-                            Typescript
-                        </div>
-                        <div class = "skill">
-                            WordPress
-                        </div>
-                        <div class = "skill">
-                            Java
-                        </div>
-                        <div class = "skill">
-                            R
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
 
             <!-- <div id = "contact" class = "hidden">
                 <div class = "page-subtitle">

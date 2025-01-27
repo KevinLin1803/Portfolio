@@ -13,8 +13,9 @@ a{
     z-index: 100;
     left: 10%;
     right: 10%;
+    top: 0%;
     overflow-x: clip;
-    width: 80vw;
+    width: 83vw;
 }
 
 .right-section {
